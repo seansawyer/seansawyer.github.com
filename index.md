@@ -49,7 +49,7 @@ __Staff Engineer__ at
 
 July 2010 to present
 
-As a lead developer on the Vitrue’s Core Services team, Sean is instrumental in
+As a lead developer on Vitrue’s Core Services team, Sean is instrumental in
 the ongoing efforts to modularize and scale the core APIs behind Vitrue’s social
 marketing platform, including:
 
