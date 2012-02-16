@@ -45,7 +45,8 @@ Sean has also dabbled in Common Lisp and ChucK, and is an avid Linux enthusiast.
 
 ## Professional Experience ##
 
-__Staff Engineer__ at [Vitrue](http://vitrue.com)
+__Staff Engineer__ at
+[Vitrue](http://vitrue.com)
 
 July 2010 to present
 
@@ -53,8 +54,9 @@ As a lead developer on the Vitrue’s Core Services team, Sean is instrumental i
 the ongoing efforts to modularize and scale the core APIs behind Vitrue’s social
 marketing platform, including:
 
-* Developing a Facebook API caching application and REST API using Erlang/OTP and
-  MongoDB. This application, running on two servers, replaces 18 servers running
+* Developing a social API data harvesting/notification service and caching API
+  using Erlang/OTP and MongoDB. This application, running on two servers,
+  replaces 18 servers running
   the previous Rails solution and performs a superset of its predecessor’s tasks
   in a fraction of the time.
 * Rearchitecting and leading development of the Facebook conversation/moderation
@@ -65,7 +67,8 @@ marketing platform, including:
   Vitrue’s EC2 infrastructure using Chef and Scalr.
 * Providing practical and conceptual guidance to fellow engineers.
 
-__Senior Software Engineer__ at [Mobilization Labs](http://mobilizationlabs.com/) 
+__Senior Software Engineer__ at
+[Mobilization Labs](http://mobilizationlabs.com/) 
 
 May 2008 to July 2010
 
@@ -91,7 +94,8 @@ and deployed to a cluster of Tomcat app servers.
   integration of Terracotta into the application cluster and serving static
   resources from Amazon S3.
 
-__Senior Software Engineer__ at [InComm](http://www.incomm.com/)
+__Senior Software Engineer__ at
+[InComm](http://www.incomm.com/)
 
 January 2008 to May 2008
 
