@@ -6,7 +6,9 @@ layout: default
 ## Contact ##
 
 [Facebook](http://www.facebook.com/seancsawyer)
+
 [Github](https://github.com/seansawyer)
+
 [Twitter](https://twitter.com/#!/seansawyer)
 
 ## Education ##
@@ -43,7 +45,9 @@ Sean has also dabbled in Common Lisp and ChucK, and is an avid Linux enthusiast.
 
 ## Professional Experience ##
 
-__Staff Engineer__ at [Vitrue](http://vitrue.com) - July 2010 to present
+__Staff Engineer__ at [Vitrue](http://vitrue.com)
+
+July 2010 to present
 
 As a lead developer on the Vitrue’s Core Services team, Sean is instrumental in
 the ongoing efforts to modularize and scale the core APIs behind Vitrue’s social
@@ -61,7 +65,9 @@ marketing platform, including:
   Vitrue’s EC2 infrastructure using Chef and Scalr.
 * Providing practical and conceptual guidance to fellow engineers.
 
-__Senior Software Engineer__ at [Mobilization Labs](http://mobilizationlabs.com/) - May 2008 to July 2010
+__Senior Software Engineer__ at [Mobilization Labs](http://mobilizationlabs.com/) 
+
+May 2008 to July 2010
 
 Sean helped drive development of Wildfire Platform, a SaaS web application that
 assists organizations in managing and mobilizing their supporters to grassroots
@@ -85,7 +91,9 @@ and deployed to a cluster of Tomcat app servers.
   integration of Terracotta into the application cluster and serving static
   resources from Amazon S3.
 
-__Senior Software Engineer__ at [InComm](http://www.incomm.com/) - January 2008 to May 2008
+__Senior Software Engineer__ at [InComm](http://www.incomm.com/)
+
+January 2008 to May 2008
 
 Sean helped guide the growth of InComm’s web development team through his
 programming expertise, by agitating for better development practices, mentoring
@@ -96,6 +104,13 @@ team’s new and existing applications run.
 * Planned and implemented a number of much-needed improvements to existing production applications on a variety of platforms (Rails, Spring/Hibernate and ColdFusion). These included vast UI improvements, performance optimizations and critical feature additions, as well as migration from Struts to Spring MVC.
 * Collaborated with management on analyzing and setting project roadmaps and feature sets for upcoming releases.
 * Performed level-of-effort analysis of incoming projects for purposes of setting the development timeline.
+
+## Extracurriculars ##
+
+Sean is the co-organizer of the [Atlanta Lisp Users Group](http://www.meetup.com/Atlanta-Lisp-User-Group/).
+
+He also volunteers at the
+[Grant Park Community Garden](http://www.facebook.com/GrantParkCommunityGarden).
 
 ## Epilogue ##
 
