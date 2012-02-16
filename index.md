@@ -58,12 +58,12 @@ marketing platform, including:
   replaces 18 servers running
   the previous Rails solution and performs a superset of its predecessor’s tasks
   in a fraction of the time.
-* Rearchitecting and leading development of the Facebook conversation/moderation
-  features of Vitrue Publisher, using the Open Graph API and FQL.
+* Rearchitecting and leading development of Vitrue Publisher's conversational
+  features for Facebook and Twitter.
 * Prototyping Vitrue’s location-based marketing offering: a self-service toolkit
   with Foursquare and Facebook Places integration.
-* Collaborating with other members of the devops team to build and maintain
-  Vitrue’s EC2 infrastructure using Chef and Scalr.
+* Collaborating with other members of the team on devops-focused efforts,
+  building and maintaining Vitrue’s EC2 infrastructure using Chef and Scalr.
 * Providing practical and conceptual guidance to fellow engineers.
 
 __Senior Software Engineer__ at
@@ -103,10 +103,16 @@ programming expertise, by agitating for better development practices, mentoring
 other developers on the team and updating the technology stack on which the
 team’s new and existing applications run.
 
-* Designed and implemented internal and customer-facing web applications using Spring and Hibernate, as well as supervising up to five other developers working in concert on these applications. Also designed the UI for several of these applications.
-* Planned and implemented a number of much-needed improvements to existing production applications on a variety of platforms (Rails, Spring/Hibernate and ColdFusion). These included vast UI improvements, performance optimizations and critical feature additions, as well as migration from Struts to Spring MVC.
-* Collaborated with management on analyzing and setting project roadmaps and feature sets for upcoming releases.
-* Performed level-of-effort analysis of incoming projects for purposes of setting the development timeline.
+* Designed and implemented internal and customer-facing web applications using
+  Spring and Hibernate, as well as supervising up to five other developers
+  working in concert on these applications. Also designed the UI for several of
+  these applications.
+* Planned and implemented a number of much-needed improvements to existing
+  production applications on a variety of platforms (Rails, Spring/Hibernate and
+  ColdFusion). These included vast UI improvements, performance optimizations and
+  critical feature additions, as well as migration from Struts to Spring MVC.
+* Collaborated with management on analyzing and setting project roadmaps and
+  feature sets for upcoming releases.
 
 ## Extracurriculars ##
 
