@@ -27,10 +27,9 @@ Requisite language/concept laundry list:
 * Erlang
 * Ruby
 * SQL and relational database concepts
-* JavaScript
-* HTML and CSS
-* XML and JSON
-* REST
+* JavaScript, HTML, CSS
+* REST, JSON, XML
+* ZeroMQ
 
 Laundry list of tools:
 
@@ -55,7 +54,7 @@ the ongoing efforts to modularize and scale the core APIs behind Vitrue’s soci
 marketing platform, including:
 
 * Developing a social API data harvesting/notification service and caching API
-  using Erlang/OTP and MongoDB. This application, running on two servers,
+  using Erlang/OTP, ZeroMQ, Redis and MongoDB. This application, running on two servers,
   replaces 18 servers running
   the previous Rails solution and performs a superset of its predecessor’s tasks
   in a fraction of the time.
