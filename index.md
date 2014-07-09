@@ -5,11 +5,11 @@ layout: default
 
 ## Contact ##
 
-[Facebook](http://www.facebook.com/seancsawyer)
-
 [Github](https://github.com/seansawyer)
 
 [Twitter](https://twitter.com/#!/seansawyer)
+
+[Facebook](http://www.facebook.com/seancsawyer)
 
 ## Education ##
 
@@ -17,53 +17,42 @@ BS in Computer Science, December 2002, University of Georgia
 
 ## Qualifications ##
 
-Sean is a versatile and skilled engineer with a proven ability to adapt to an
-organization’s changing needs. He is well-versed in the ways of agile
-development and is passionate about innovation, having been a part of Atlanta’s
-startup community for more than seven years.
-
-Requisite language/concept laundry list:
-
-* Erlang
-* Ruby
-* SQL and relational database concepts
-* JavaScript, HTML, CSS
-* REST, JSON, XML
-* ZeroMQ
-
-Laundry list of tools:
-
-* Emacs
-* PostgreSQL and MySQL
-* MongoDB, Redis and Memcached
-* Unicorn and Nginx
-* Mochiweb, Webmachine and Yaws
-* Tsung
-
-Sean has also dabbled in Common Lisp and ChucK, and is an avid Linux enthusiast.
+Sean builds things with Python, Flask, PostgreSQL, Redis and RabbitMQ.
+In the past he's built things with Erlang, Ruby, Java and PHP.
 
 ## Professional Experience ##
 
-__Staff Engineer__ at
+__Engineer__ at
+Rocket Science Group
+
+May 2012 to present
+
+* Developing a predictive analytics service using Python, PostgreSQL,
+  Redis and RabbitMQ. The service maintains summary statistics on
+  around 3 billion unique items, processing 250 million events per
+  day.
+* Prototyping a business intelligence tool to enable customers to
+  perform ad hoc analysis on their data using Python and BigQuery.
+
+__Senior Engineer__ at
 [Vitrue](http://vitrue.com)
 
-July 2010 to present
+July 2010 to May 2012
 
-As a lead developer on Vitrue’s Core Services team, Sean is instrumental in
-the ongoing efforts to modularize and scale the core APIs behind Vitrue’s social
+As a lead developer on Vitrue’s Core Services team, Sean was instrumental in
+modularizing and scaling the core APIs behind Vitrue’s social
 marketing platform, including:
 
 * Developing a social API data harvesting/notification service and caching API
-  using Erlang/OTP, ZeroMQ, Redis and MongoDB. This application, running on two servers,
-  replaces 18 servers running
-  the previous Rails solution and performs a superset of its predecessor’s tasks
-  in a fraction of the time.
-* Rearchitecting and leading development of Vitrue Publisher's conversational
-  features for Facebook and Twitter.
+using Erlang, ZeroMQ, Redis and PostgreSQL. This service replaced a
+slower, more limited Ruby application, realizing substantial
+performance gains.
+* Leading development of Vitrue Publisher's conversational features
+for Facebook and Twitter.
 * Prototyping Vitrue’s location-based marketing offering: a self-service toolkit
-  with Foursquare and Facebook Places integration.
+with Foursquare and Facebook Places integration.
 * Collaborating with other members of the team on devops-focused efforts,
-  building and maintaining Vitrue’s EC2 infrastructure using Chef and Scalr.
+building and maintaining Vitrue’s EC2 infrastructure using Chef and Scalr.
 * Providing practical and conceptual guidance to fellow engineers.
 
 __Senior Software Engineer__ at
