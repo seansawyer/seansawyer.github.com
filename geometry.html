@@ -254,24 +254,7 @@
 
 	function draw() {
 		var scale = 0.5
-		var dragonSlayer = new Geometry(
-			'blue',
-			scale,
-			565, // erd
-			2.8 * 25.4, // td
-			17 * 25.4, // st
-			600, // tte
-			435, // cs
-			1128, // wb
-			50, // bbd
-			100, // ht
-			800, // so
-			626, // stack
-			408, // reach
-			68, // hta
-			73 // sta
-		)
-		var elMar = new Geometry(
+		var elMar275 = new Geometry(
 			'red',
 			scale,
 			//605, // 29 erd
@@ -290,29 +273,28 @@
 			71, // hta
 			73 // sta
 		)
-		var karateMonkey = new Geometry(
-			'green',
+		var elMar29 = new Geometry(
+			'red',
 			scale,
-			//605, // 29 erd
-			565, // 27.5+ erd
-			//2.4 * 25.4, // td
-			2.8 * 25.4, // td
-			18 * 25.4, // st
-			599.3, // tte
-			431, // cs
-			1064.9, // wb
-			68, // bbd
+			605, // 29 erd
+			//565, // 27.5+ erd
+			2.2 * 25.4, // td
+			//2.8 * 25.4, // td
+			17 * 25.4, // st
+			600, // tte
+			438, // cs
+			1102, // wb
+			60, // bbd
 			100, // ht
-			792.7, // so
-			602.5, // stack
-			415.1, // reach
-			71.5, // hta
+			752.4, // so
+			600.4, // stack
+			416.5, // reach
+			71, // hta
 			73 // sta
 		)
 		var canvas = new fabric.Canvas('c')
-		dragonSlayer.draw(canvas)
-		karateMonkey.draw(canvas)
-		elMar.draw(canvas)
+		elMar275.draw(canvas)
+		elMar29.draw(canvas)
 	}
 
   function drawStuff() {
