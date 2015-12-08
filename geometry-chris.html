@@ -314,10 +314,48 @@
 			71, // hta
 			73 // sta
 		)
+		var elMarLrg275 = new Geometry(
+			'red',
+			scale,
+			//605, // 29 erd
+			565, // 27.5+ erd
+			//2.4 * 25.4, // td
+			2.8 * 25.4, // td
+			19 * 25.4, // st
+			620, // tte
+			438, // cs
+			1112, // wb
+			60, // bbd
+			110, // ht
+			790.2, // so
+			609.8, // stack
+			433.6, // reach
+			71, // hta
+			73 // sta
+		)
+		var elMarLrg29 = new Geometry(
+			'green',
+			scale,
+			605, // 29 erd
+			//565, // 27.5+ erd
+			2.2 * 25.4, // td
+			//2.8 * 25.4, // td
+			19 * 25.4, // st
+			620, // tte
+			438, // cs
+			1112, // wb
+			60, // bbd
+			110, // ht
+			790.2, // so
+			609.8, // stack
+			433.6, // reach
+			71, // hta
+			73 // sta
+		)
 		var canvas = new fabric.Canvas('c')
 		dragonSlayerLrg.draw(canvas)
-		elMarMed275.draw(canvas)
-		elMarMed29.draw(canvas)
+		elMarLrg275.draw(canvas)
+		elMarLrg29.draw(canvas)
   }
 })();
 </script>
