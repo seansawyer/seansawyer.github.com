@@ -274,7 +274,7 @@
 			73 // sta
 		)
 		var elMar29 = new Geometry(
-			'blue',
+			'green',
 			scale,
 			605, // 29 erd
 			//565, // 27.5+ erd
@@ -292,273 +292,31 @@
 			71, // hta
 			73 // sta
 		)
+		var analog26 = new Geometry(
+			'blue',
+			scale,
+			559, // 26 erd
+			//565, // 27.5+ erd
+			//605, // 29 erd
+			//2.8 * 25.4, // td
+			2.2 * 25.4, // td
+			485, // 19 inch st
+			600, // tte
+			424, // cs
+			1072, // wb
+			37, // bbd
+			127, // ht
+			31.4 * 25.4, // so
+			582, // stack
+			420, // reach
+			71, // hta
+			73 // sta
+		)
 		var canvas = new fabric.Canvas('c')
 		elMar275.draw(canvas)
 		elMar29.draw(canvas)
+		analog26.draw(canvas)
 	}
-
-  function drawStuff() {
-		// rim diameter and radius
-		var uerd = 565,
-		    erd = erd * scale,
-			  err = erd / 2;
-		// tire diameter
-		var utd = 76.2,
-				td = utd * scale;
-		// wheel diameter and radius
-	  // 27.5 in (29 in is 73.66);
-		//var uwd = 698.5,
-		var uwd = uerd + 2 * utd,
-				wd = uwd * scale,
-			  wr = wd / 2;
-		// seat tube length, AKA frame size
-		// 19 in
-		var ust = 482.6,
-				st = ust * scale;
-		// effective top tube length
-		var utt = 620,
-				tt = utt * scale;
-		// chainstay length
-		var ucs = 435,
-				cs = ucs * scale;
-		// wheelbase
-		var uwb = 1149,
-				wb = uwb * scale;
-		// bottom bracket drop
-		var ubbd = 50,
-				bbd = ubbd * scale;
-		// head tube length
-		var uht = 110,
-				ht = uht * scale;
-		// standover height
-		var uso = 834,
-				so = uso * scale;
-		// stack height
-		var ush = 635,
-				sh = ush * scale;
-		// reach
-		var ur = 425,
-				r = ur * scale;
-		// head tube angle
-		var uhta = 68,
-		    hta = degToRad(uhta);
-		// seat tube angle
-		var usta = 73,
-		    sta = degToRad(usta);
-		// chainstay angle
-		// steerer angle
-
-		// The origin point will be the axle of the rear wheel.
-		// This point is one half of the wheel diameter off of the ground.
-		var rearAxleX = wr,
-		    rearAxleY = scale * 700;
-
-		console.log('wheel diameter ' + wd);
-		console.log('wheel radius ' + wr);
-		console.log('rear axle x=' + rearAxleX + ', y=' + rearAxleY);
-
-		// The front wheel axle is at the other end of the wheelbase.
-		var frontAxleX = rearAxleX + wb,
-		    frontAxleY = rearAxleY;
-
-		// Determine where along the wheelbase to drop the bottom bracket
-	  // using the chainstay as the hypoteneuse of a right triangle and
-		// the bottom bracket drop as one of the sides.
-		var bracketX = Math.sqrt(cs*cs + bbd*bbd) + wr,
-		    bracketY = rearAxleY + bbd;
-
-		// The seat tube is above the bottom bracket, angled backward.
-		var seatTubeX = bracketX - st * Math.cos(sta),
-		    seatTubeY = bracketY - st * Math.sin(sta);
-
-		// The stack height is the difference between the height of the
-		// bottom bracket and the height of the steerer tube.
-		var stackX = bracketX,
-				stackY = bracketY - sh;
-
-		// The head tube starts at the stack height, forward of the
-		// bottom bracket by the length of the reach.
-		var headTubeTopX = stackX + r,
-				headTubeTopY = stackY;
-
-		// The head tube ends forward and down from the top, at the
-		// opposite angle from the head tube angle.
-		var headTubeBottomX = headTubeTopX + ht * Math.sin(degToRad(90-uhta)),
-		    headTubeBottomY = headTubeTopY + ht * Math.cos(degToRad(90-uhta));
-
-		// The middle of the head tube is half the distance between the
-		// top and the bottom. Imagine that. ;)
-		var headTubeMiddleX = (headTubeTopX + headTubeBottomX) / 2,
-		    headTubeMiddleY = (headTubeTopY + headTubeBottomY) / 2;
-
-		// We assume that the weld point for the top tube is one-third the way
-		// down the head tube.
-		var headTubeUpperX = headTubeTopX + (ht / 3) * Math.sin(degToRad(90-uhta)),
-		    headTubeUpperY = headTubeTopY + (ht / 3) * Math.cos(degToRad(90-uhta));
-
-		// We assume that the weld point for the down tube is two-thirds the way
-	  // down the head tube.	
-		var headTubeLowerX = headTubeTopX + 2 * (ht / 3) * Math.sin(degToRad(90-uhta)),
-		    headTubeLowerY = headTubeTopY + 2 * (ht / 3) * Math.cos(degToRad(90-uhta));
-
-		// Now we assume that the seat post weld point for the down tube is down the
-		// seat post by one-third the length of the head tube.
-		var seatTubeUpperX = seatTubeX + (ht / 3) * Math.cos(sta),
-			  seatTubeUpperY = seatTubeY + (ht / 3) * Math.sin(sta);
-		
-		// The effective top tube measurement extends backward from the middle of the
-		// head tube to the line of the seat post.
-		var topTubeEffectiveX = headTubeMiddleX - tt,
-		    topTubeEffectiveY = headTubeMiddleY;
-
-		var canvas = new fabric.Canvas('c');
-
-		var bracket = new fabric.Circle({
-			radius: 13,
-			fill: 'red',
-			left: bracketX - 13,
-			top: bracketY - 13
-		});
-		canvas.add(bracket);
-
-		// We first draw the rear wheel centered on this point.
-		var rearWheel = new fabric.Circle({
-			radius: wr,
-			//strokeWidth: td,
-			stroke: 'black',
-			fill: 'white',
-			left: 0,
-			top: rearAxleY - wr
-		});
-		canvas.add(rearWheel);
-
-		var axle = new fabric.Circle({
-			radius: 13,
-			fill: 'red',
-			left: rearAxleX - 13,
-			top: rearAxleY - 13
-		});
-		canvas.add(axle);
-
-		// Draw the front wheel
-		var frontWheel = new fabric.Circle({
-			radius: wr,
-			//strokeWidth: td,
-			stroke: 'black',
-			fill: 'white',
-			left: frontAxleX - wr,
-			top: frontAxleY - wr
-		});
-		canvas.add(frontWheel);
-
-		// Draw the wheelbase line
-		var wheelBase = new fabric.Line(
-				[rearAxleX, rearAxleY, rearAxleX + wb, rearAxleY], {
-        //left: 170,
-        //top: 150,
-        stroke: 'blue',
-				strokeWidth: 2
-    });
-		canvas.add(wheelBase);
-
-		// Draw the seat tube line up and back from the bottom bracket.
-		var seatTube = new fabric.Line(
-			[bracketX, bracketY, seatTubeX, seatTubeY], {
-				stroke: 'red',
-				strokeWidth: 2
-			}
-		);
-		canvas.add(seatTube);
-
-		// Draw the chainstay line from the rear axle to the bottom bracket
-		var chainStay = new fabric.Line(
-			[rearAxleX, rearAxleY, bracketX, bracketY], {
-				stroke: 'red',
-				strokeWidth: 2
-			}
-		);
-		canvas.add(chainStay);
-
-		// Draw the stack line up from the bottom bracket
-		var stack = new fabric.Line(
-			[bracketX, bracketY, stackX, stackY], {
-				stroke: 'blue',
-				strokeWidth: 2
-			}
-		);
-		canvas.add(stack);
-
-		// Draw the reach line forward from the stack.
-		var reach = new fabric.Line(
-			[stackX, stackY, headTubeTopX, headTubeTopY], {
-				stroke: 'blue',
-				strokeWidth: 2
-			}
-		);
-		canvas.add(reach);
-
-		// Draw the head tube line
-		var headTube = new fabric.Line(
-			[headTubeTopX, headTubeTopY, headTubeBottomX, headTubeBottomY], {
-				stroke: 'red',
-				strokeWidth: 2
-			}
-		);
-		canvas.add(headTube);
-
-		// Draw the top tube between the upper "weld points".
-		var topTube = new fabric.Line(
-			[headTubeUpperX, headTubeUpperY, seatTubeUpperX, seatTubeUpperY], {
-				stroke: 'red',
-				strokeWidth: 2
-			}
-		);
-		canvas.add(topTube);
-
-		// Draw the downtube from the lower head tube "weld point" to the
-		// bottom bracket center.
-		var downTube = new fabric.Line(
-			[headTubeLowerX, headTubeLowerY, bracketX, bracketY], {
-				stroke: 'red',
-				strokeWidth: 2
-			}
-		);
-		canvas.add(downTube);
-
-		// Draw the seat stay from the upper seat tube weld point to the 
-		// rear axle.
-		var seatStay = new fabric.Line(
-			[seatTubeUpperX, seatTubeUpperY, rearAxleX, rearAxleY], {
-				stroke: 'red',
-				strokeWidth: 2
-			}
-		);
-		canvas.add(seatStay);
-
-		// Draw the top tube effective line backward from the middle of
-	  // the top tube.
-		var topTubeEffective = new fabric.Line(
-			[headTubeMiddleX, headTubeMiddleY, topTubeEffectiveX, topTubeEffectiveY], {
-				stroke: 'blue',
-				strokeWidth: 2
-			}
-		);
-		canvas.add(topTubeEffective);	
-
-		/*
-		// create a rectangle with angle=45
-		var rect = new fabric.Rect({
-			left: 100,
-			top: 100,
-			fill: 'red',
-			width: 20,
-			height: 20,
-			angle: 45
-		});
-
-		canvas.add(rect);
-		*/
-  }
 })();
 </script>
 </body>
