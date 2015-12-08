@@ -17,6 +17,7 @@
 
 <body>
 <ul>
+    <li style="color: gray">Avalanche 26 (large)</li>
     <li style="color: blue">Jamis Dragonslayer 27.5 (large)</li>
     <li style="color: red">El Mariachi 27.5 (large)</li>
     <li style="color: green">El Mariachi 29 (large)</li>
@@ -258,7 +259,24 @@
 
 	function draw() {
 		var scale = 0.5
-		
+		var avalancheLrg = new Geometry(
+		  'gray',
+		  scale,
+		  559, // 26 erd
+		  //565, // 27.5+ erd
+		  2.2 * 25.4, // td
+		  483, // st
+		  592, // tte
+		  420, // cs
+		  1068.1, // wb
+		  35, // bbd
+		  130, // ht
+		  803.9, // so
+		  634, // stack
+		  425, // reach
+		  70.5, // hta
+		  73 // sta
+		)
 		var dragonSlayerLrg = new Geometry(
 		  'blue',
 		  scale,
@@ -353,6 +371,7 @@
 			73 // sta
 		)
 		var canvas = new fabric.Canvas('c')
+		avalancheLrg.draw(canvas)
 		dragonSlayerLrg.draw(canvas)
 		elMarLrg275.draw(canvas)
 		elMarLrg29.draw(canvas)
