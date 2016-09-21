@@ -20,7 +20,8 @@
 	<li style="color: gray">Cross Check (56)</li>
     <li style="color: blue">Bridgestone XO-1 (55)</li>
     <li style="color: red">Co-Motion Divide (55)</li>
-    <li style="color: purple">1993 Specialized Rockhopper (17.5"?)</li>
+    <li style="color: purple">Rockhopper (17.5, 26)</li>
+    <li style="color: gold">Rockhopper (17.5, 700)</li>
     <li style="color: green">Soma Wolverine (56)</li>
 </ul>
 <canvas id="c"></canvas>
@@ -336,11 +337,51 @@
 		  71, // hta
 		  73 // sta
 		)
+		var rockhopper700 = new Geometry(
+		  'gold',
+		  scale,
+		  //559, // ISO 26
+		  //584, // ISO 27.5+
+		  622, // ISO 700c/29
+		  40, // td
+		  550, // st
+		  554, // tte
+		  430, // cs
+		  1055, // wb
+		  45, // bbd
+		  120, // ht
+		  779.3, // so
+		  542.5, // stack
+		  398, // reach
+		  71, // hta
+		  73 // sta
+		)
+		var wolverine = new Geometry(
+		  'green',
+		  scale,
+		  //559, // ISO 26
+		  //584, // ISO 27.5+
+		  622, // ISO 700c/29
+		  2.25 * 25.4, // td
+		  560, // st
+		  575, // tte
+		  425, // cs
+		  1040, // wb
+		  70, // bbd
+		  140, // ht
+		  31.65*2.54, // so
+		  578, // stack
+		  404, // reach
+		  72, // hta
+		  73.5 // sta
+		)
 		var canvas = new fabric.Canvas('c')
 		crossCheck56.draw(canvas)
 		bridgestoneXO1.draw(canvas)
 		//divide.draw(canvas)
 		rockhopper.draw(canvas)
+		rockhopper700.draw(canvas)
+		wolverine.draw(canvas)
   }
 })();
 </script>
