@@ -24,7 +24,7 @@ I love to build data-heavy applications, most often using Python, Java and somet
 Scala. Under the hood of the things I've built in recent memory, you'll also variously
 find Elasticsearch, Kafka, PostgreSQL, Redis.
 
-In the past, I've built distributed systems with Erlang and web applcations with PHP and Ruby.
+In the past, I've built distributed systems with Erlang and web applications with PHP and Ruby.
 
 ## Professional Experience ##
 
@@ -36,12 +36,12 @@ May 2012 to present
 Throughout my time at MailChimp, my efforts have focused on turning our
 data scientists' research into production services that put the power of
 statistical modeling to work for the small businesses and organizations that
-use MailChimp.
+use MailChimp. 
 
 * Designing and leading development of MailChimp's data pipeline, which
-  streams row-level changes from the binlogs of MailChimp's hundreds of MySQL
+  streams billions of row-level changes each day from the binlogs of our hundreds of MySQL
   instances. The underlying triptych of Scala applications produces Kafka
-  topics full of Thrift-serialized structs.
+  topics representing each change as a Thrift-serialized struct.
 * Creating and maintaining client libraries and tooling related to MailChimp's
   data pipeline, variously in Java, PHP and Python.
 * Designing and building MailChimp Pro's reporting and segmentation service
@@ -50,9 +50,9 @@ use MailChimp.
   R, Redis and RabbitMQ. The service maintains summary statistics on
   around 5 billion unique email addresses, which feed models for predicting
   bounce rates, optimizing campaign send times, and detecting bots.
-* Prototyping MailChimp's predictive demographics service.
-* Prototyping a BI tool enabling customers to
-  perform ad hoc analysis on their data using Python and BigQuery.
+* Prototyping MailChimp's predictive demographics service, as well as
+  a BI tool enabling customers to perform ad hoc analysis on their MailChimp data
+  using Python and BigQuery.
 * Contributing to the development of MailChimp's in-house web framework,
   including improvements to its ORM, process management, and concurrency APIs.
 * Collaborating across a wide array of teams to facilitate access to data
@@ -117,11 +117,11 @@ by agitating for improved development practices, mentoring
 other developers, and leading a range improvements to the various stacks on which the
 team’s new and existing applications run.
 
-* Designed and implemented a variety of web applications (some internal, some user-facing) using
-  Spring and Hibernate, while supervising a team of five engineers.
+* Designed and implemented a half-dozen new web applications (some internal, some user-facing) using
+  Java and Spring, while supervising a team of five engineers.
   I also designed the UI for several of these applications, for better or for worse!
 * Planned and implemented a number of much-needed improvements to existing
-  production applications on a variety of platforms (Rails, Spring/Hibernate and
+  production applications on a variety of platforms (Ruby/Rails, Java/Spring,
   ColdFusion). These included UI overhauls, performance optimization and
   critical feature additions, as well as migration from Struts to Spring MVC.
 
