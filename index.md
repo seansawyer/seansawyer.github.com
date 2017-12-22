@@ -5,113 +5,133 @@ layout: default
 
 ## Contact ##
 
-[Github](https://github.com/seansawyer)
+[Github][github]
 
-[Twitter](https://twitter.com/#!/seansawyer)
+[Instagram][instagram]
 
-[Facebook](http://www.facebook.com/seancsawyer)
+[github]: https://github.com/seansawyer
+[instagram]: https://instagram.com/seanakadug
+
 
 ## Education ##
 
 BS in Computer Science, December 2002, University of Georgia
 
+
 ## Qualifications ##
 
-Sean builds things with Python, Flask, PostgreSQL, Redis and RabbitMQ.
-In the past he's built things with Erlang, Ruby, Java and PHP.
+I love to build data-heavy applications, most often using Python, Java and sometimes
+Scala. Under the hood of the things I've built in recent memory, you'll also variously
+find Elasticsearch, Kafka, PostgreSQL, Redis.
+
+In the past, I've built distributed systems with Erlang and web applcations with PHP and Ruby.
 
 ## Professional Experience ##
 
-__Engineer__ at
-Rocket Science Group
+__Senior Software Engineer__ at
+[MailChimp][mailchimp]
 
 May 2012 to present
 
-* Developing a predictive analytics service using Python, PostgreSQL,
-  Redis and RabbitMQ. The service maintains summary statistics on
-  around 3 billion unique items, processing 250 million events per
-  day.
-* Prototyping a business intelligence tool to enable customers to
-  perform ad hoc analysis on their data using Python and BigQuery.
+Throughout my time at MailChimp, my efforts have focused on turning our
+data scientists' research into production services that put the power of
+statistical modeling to work for the small businesses and organizations that
+use MailChimp.
 
-__Senior Engineer__ at
-[Vitrue](http://vitrue.com)
+* Designing and leading development of MailChimp's data pipeline, which
+  streams row-level changes from the binlogs of MailChimp's hundreds of MySQL
+  instances. The underlying triptych of Scala applications produces Kafka
+  topics full of Thrift-serialized structs.
+* Creating and maintaining client libraries and tooling related to MailChimp's
+  data pipeline, variously in Java, PHP and Python.
+* Designing and building MailChimp Pro's reporting and segmentation service
+  using Scala, PHP, PostgreSQL and Redis.
+* Designing and building MailChimp's predictive analytics service using Python,
+  R, Redis and RabbitMQ. The service maintains summary statistics on
+  around 5 billion unique email addresses, which feed models for predicting
+  bounce rates, optimizing campaign send times, and detecting bots.
+* Prototyping MailChimp's predictive demographics service.
+* Prototyping a BI tool enabling customers to
+  perform ad hoc analysis on their data using Python and BigQuery.
+* Contributing to the development of MailChimp's in-house web framework,
+  including improvements to its ORM, process management, and concurrency APIs.
+* Collaborating across a wide array of teams to facilitate access to data
+  for stream and batch processing.
+
+[mailchimp]: https://mailchimp.com
+
+__Staff Engineer__ at
+[Vitrue][vitrue]
 
 July 2010 to May 2012
 
-As a lead developer on Vitrue’s Core Services team, Sean was instrumental in
-modularizing and scaling the core APIs behind Vitrue’s social
-marketing platform, including:
+As a lead developer on Vitrue’s Core Services team, I focused heavily on
+modularizing and scaling the core APIs behind Vitrue’s social marketing
+platform.
 
-* Developing a social API data harvesting/notification service and caching API
+* Developed a social data harvesting/notification service and caching API
 using Erlang, ZeroMQ, Redis and PostgreSQL. This service replaced a
 slower, more limited Ruby application, realizing substantial
 performance gains.
-* Leading development of Vitrue Publisher's conversational features
-for Facebook and Twitter.
-* Prototyping Vitrue’s location-based marketing offering: a self-service toolkit
-with Foursquare and Facebook Places integration.
-* Collaborating with other members of the team on devops-focused efforts,
+* Led development of Vitrue Publisher's conversational features
+for Facebook and Twitter using Ruby, Rails and MongoDB.
+* Prototyped Vitrue’s location-based marketing offering: a self-service toolkit
+with Foursquare and Facebook Places integration, also built using Ruby, Rails and MongoDB.
+* Collaborated with other members of the team on devops-focused efforts,
 building and maintaining Vitrue’s EC2 infrastructure using Chef and Scalr.
-* Providing practical and conceptual guidance to fellow engineers.
+* Mentored junior engineers via frequent pair-programming and code review
+  sessions, as well as organizing reading groups.
+
+[vitrue]: http://www.oracle.com/us/solutions/social/vitrue/index.html
+
 
 __Senior Software Engineer__ at
-[Mobilization Labs](http://mobilizationlabs.com/) 
+Mobilization Labs
 
 May 2008 to July 2010
 
-Sean helped drive development of Wildfire Platform, a SaaS web application that
-assists organizations in managing and mobilizing their supporters to grassroots
-action. The application has been used by a diverse crowd of organizations such
-as the Jonas Brothers, the National Urban League, Atlanta Union Mission and
-Chick-fil-A.
+At Mobilization Labs, I helped drive development of Wildfire Platform, a
+SaaS web application used by primary by non-profits to manage and mobilize
+their supporters for grassroots action. The application was used by a diverse
+crowd of organizations, from the National
+Urban League, to the Atlanta Mission, to even the Jonas Brothers.
 
-Wildfire was built using Spring and Hibernate (with PostgreSQL under the hood)
-and deployed to a cluster of Tomcat app servers.
+Wildfire was built using Java/Spring and PostgreSQL.
 
-* Lead development of the platform’s REST API and implemented a number of client
+* Led development of the platform’s REST API and implemented a number of client
   applications powered by the API, including an SMS survey application written in
   Scala/Lift and a number of smaller-scale PHP solutions.
-* Planned and implemented new features for and improvements to the Wildfire
-  Platform in an iterative fashion.
-* Collaborated with other engineers in the maintenance of Mobilization Labs’
-  production and QA environments and the wide variety of associated systems,
-  database and network administration.
-* Collaborated with other engineers in scaling the platform to handle the large
-  amounts of traffic and the resulting mountain of data. This included
-  integration of Terracotta into the application cluster and serving static
-  resources from Amazon S3.
+* Created and maintainted a load testing suite (using Tsung) simulating common
+  traffic patterns within the application based on analysis of access logs from
+  periods of heavy production load.
+* Collaborated with other engineers in scaling the platform, including the
+  integration of Terracotta for clustered heap and S3/Cloudfront for asset delivery.
 
 __Senior Software Engineer__ at
-[InComm](http://www.incomm.com/)
+[InComm][incomm]
 
 January 2008 to May 2008
 
-Sean helped guide the growth of InComm’s web development team through his
-programming expertise, by agitating for better development practices, mentoring
-other developers on the team and updating the technology stack on which the
+I helped guide the growth of InComm’s web development team by
+by agitating for improved development practices, mentoring
+other developers, and leading a range improvements to the various stacks on which the
 team’s new and existing applications run.
 
-* Designed and implemented internal and customer-facing web applications using
-  Spring and Hibernate, as well as supervising up to five other developers
-  working in concert on these applications. Also designed the UI for several of
-  these applications.
+* Designed and implemented a variety of web applications (some internal, some user-facing) using
+  Spring and Hibernate, while supervising a team of five engineers.
+  I also designed the UI for several of these applications, for better or for worse!
 * Planned and implemented a number of much-needed improvements to existing
   production applications on a variety of platforms (Rails, Spring/Hibernate and
-  ColdFusion). These included vast UI improvements, performance optimizations and
+  ColdFusion). These included UI overhauls, performance optimization and
   critical feature additions, as well as migration from Struts to Spring MVC.
-* Collaborated with management on analyzing and setting project roadmaps and
-  feature sets for upcoming releases.
 
-## Extracurriculars ##
+[incomm]: http://www.incomm.com/Pages/default.aspx
 
-Sean is the co-organizer of the [Atlanta Lisp Users Group](http://www.meetup.com/Atlanta-Lisp-User-Group/).
-
-He also volunteers at the
-[Grant Park Community Garden](http://www.facebook.com/GrantParkCommunityGarden).
 
 ## Epilogue ##
 
-In previous lives, Sean did time as a Java developer at
-[Hannon Hill](http://hannonhill.com/) and as an SA and PHP developer at a small
+In previous lives, Sean did turns as a Java developer at
+[Hannon Hill][hannon-hill] and as a sysadmin and PHP developer at a small
 law firm.
+
+[hannon-hill]: https://www.hannonhill.com
