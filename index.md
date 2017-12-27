@@ -39,10 +39,10 @@ __Senior Software Engineer__ at
 
 May 2012 to present
 
-Throughout my time at MailChimp, my efforts have focused on turning our
-data scientists' research into production services that put the power of
-statistical modeling to work for the small businesses and organizations that
-use MailChimp. 
+Throughout my time at MailChimp, my efforts have focused on turning our data
+scientists' research into production services that empower small organizations
+and businesses by putting the power of analytics and statistical modeling within
+their reach.
 
 * Designing and leading development of MailChimp's data pipeline, which
   streams billions of row-level changes each day from the binlogs of our
@@ -54,7 +54,7 @@ use MailChimp.
   using Scala, PHP, PostgreSQL and Redis.
 * Designing and building MailChimp's predictive analytics service using Python,
   R, Redis and RabbitMQ. The service maintains summary statistics on
-  around 5 billion unique email addresses, which feed models for predicting
+  around 4 billion unique email addresses, which feed models for predicting
   bounce rates, optimizing campaign send times, and detecting bots.
 * Prototyping MailChimp's predictive demographics service, as well as
   a BI tool enabling customers to perform ad hoc analysis on their MailChimp
@@ -76,9 +76,9 @@ modularizing and scaling the core APIs behind Vitrue’s social marketing
 platform.
 
 * Developed a social data harvesting/notification service and caching API
-  using Erlang, ZeroMQ, Redis and PostgreSQL. This service replaced a
-  slower, more limited Ruby application, realizing substantial
-  performance gains.
+  using Erlang, ZeroMQ, Redis and PostgreSQL. This distributed system replaced
+  a slower, more limited Ruby application, realizing substantial performance
+  and reliability gains.
 * Led development of Vitrue Publisher's conversational features
   for Facebook and Twitter using Ruby, Rails and MongoDB.
 * Prototyped Vitrue’s location-based marketing offering: a self-service toolkit
@@ -101,9 +101,8 @@ At Mobilization Labs, I helped drive development of Wildfire Platform, a
 SaaS web application used by primary by non-profits to manage and mobilize
 their supporters for grassroots action. The application was used by a diverse
 crowd of organizations, from the National Urban League, to the Atlanta Mission,
-to even the Jonas Brothers.
-
-Wildfire was built using Java, Spring and PostgreSQL.
+to even the Jonas Brothers. Wildfire was built using Java, Spring and
+PostgreSQL.
 
 * Led development of the platform’s REST API and implemented a number of client
   applications powered by the API, including a live SMS survey application
@@ -136,12 +135,12 @@ of improvements across the gaggle of web applications owned by this small team.
 [incomm]: http://www.incomm.com/Pages/default.aspx
 
 
-## Epilogue ##
+## Odds and Ends ##
 
 During my time at Vitrue, my employer was kind enough to let me open-source
 [an Erlang ISO 8601 library][iso-8601].
 
-Long long ago, I did turns as a Java developer at [Hannon Hill][hannon-hill]
+Long long ago, I worked as a Java developer at [Hannon Hill][hannon-hill]
 and as a sysadmin and PHP developer at a small law firm.
 
 [hannon-hill]: https://www.hannonhill.com
