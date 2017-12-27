@@ -21,15 +21,16 @@ BS in Computer Science, December 2002, University of Georgia
 ## Qualifications ##
 
 I love to build data-heavy applications, most often using Python, Java and
-sometimes Scala. Under the hood of the things I've built in recent memory,
+sometimes Scala. Under the hood of the things I've built in recent memory
 you'll also find Elasticsearch, Kafka, PostgreSQL, Redis.
 
 In the past, I've built distributed systems with Erlang and web applications
 with PHP and Ruby.
 
 Although it hasn't been my primary focus, I've also done a decent amount of
-devops along the way using both Puppet and Chef - on bare metal, managed
-hosting, AWS and GCP.
+devops along the way - on bare metal, managed hosting, AWS and GCP - and have
+worked with both Puppet and Chef.
+
 
 ## Professional Experience ##
 
