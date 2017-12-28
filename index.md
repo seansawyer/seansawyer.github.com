@@ -22,7 +22,7 @@ BS in Computer Science, December 2002, University of Georgia
 
 I love to build data-heavy applications, most often using Python, Java and
 sometimes Scala. Under the hood of the things I've built in recent memory
-you'll also find Elasticsearch, Kafka, PostgreSQL, Redis.
+you'll also find Elasticsearch, Kafka, PostgreSQL, and Redis.
 
 In the past, I've built distributed systems with Erlang and web applications
 with PHP and Ruby.
