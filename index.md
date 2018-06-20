@@ -34,7 +34,7 @@ worked with both Puppet and Chef.
 
 ## Professional Experience ##
 
-__Senior Software Engineer__ at
+__Staff Software Engineer__ at
 [MailChimp][mailchimp]
 
 May 2012 to present
@@ -42,7 +42,8 @@ May 2012 to present
 Throughout my time at MailChimp, my efforts have focused on turning our data
 scientists' research into production services that empower small organizations
 and businesses by putting the power of analytics and statistical modeling within
-their reach.
+their reach. Recently, I've also been serving as the technical lead on our
+newly-formed performance engineering team.
 
 * Designing and leading development of MailChimp's data pipeline, which
   streams billions of row-level changes each day from the binlogs of our
