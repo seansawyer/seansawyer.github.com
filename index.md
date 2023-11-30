@@ -7,15 +7,15 @@ layout: default
 
 ## About Me
 
-I love building at software at scale in polyglot environments.  Python and Erlang are closest to my heart, but currently I also use TypeScript, Java and Scala.
+I love building at software at scale in polyglot environments.  Python and Erlang are closest to my heart, but these days I also use TypeScript, Java and Scala.
 
 I'm passionate about platform engineering and developer experience.  I believe a good developer platform does more than just improve productivity; it also sparks creative joy.
 
-## Education
+## Education and Certifications
 
 B.S. of Computer Science, University of Georgia (2002)
 
-AWS Certfied Solution Architect Associate (2022)
+AWS Certified Solution Architect Associate (2022)
 
 ## Experience
 
