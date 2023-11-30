@@ -44,7 +44,7 @@ May 2012 to July 2018
 July 2010 to May 2012
 
 * As a lead developer on Vitrue’s Core Services team, I focused heavily on modularizing and scaling the core APIs behind Vitrue’s social marketing platform.
-* Released an open-source an Erlang ISO 8601 date/time library, which is still used by a few projects out there.
+* Released an open-source [Erlang ISO 8601 date/time library](https://github.com/erlsci/iso8601).
 * Led development of Vitrue Publisher’s conversational features for Facebook and Twitter, helping brands engage directly with customers (Ruby/Rails, MongoDB).
 * Designed and built a distributed ingestion service to collect social media conversation and engagement data in near-real-time.  This distributed system replaced a slower, more limited Ruby application, realizing substantial performance and reliability gains (Erlang, PostgreSQL, Redis).
 * Designed and built Vitrue’s self-service location-based marketing offering, integrated with Foursquare and Facebook Places (Ruby/Rails, MongoDB, Twilio).
