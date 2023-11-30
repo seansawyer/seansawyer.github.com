@@ -3,146 +3,59 @@ title: Home
 layout: default
 ---
 
-## Contact ##
+# Sean Sawyer
 
-[Github][github]
+[GitHub](https://github.com/seansawyer)
 
-[Instagram][instagram]
+## About Me
 
-[github]: https://github.com/seansawyer
-[instagram]: https://instagram.com/seanakadug
+I love building at software at scale in polyglot environments.  Python and Erlang are closest to my heart, but currently I also use TypeScript, Java and Scala.
 
+I'm passionate about platform engineering and developer experience.  I believe a good developer platform does more than just improve productivity; it also sparks creative joy.
 
-## Education ##
+## Education
 
-BS in Computer Science, December 2002, University of Georgia
+B.S. of Computer Science, University of Georgia (2002)
 
+AWS Certfied Solution Architect Associate (2022)
 
-## Qualifications ##
+## Experience
 
-I love to build data-heavy applications, most often using Python, Java and
-sometimes Scala. Under the hood of the things I've built in recent memory
-you'll also find Elasticsearch, Kafka, PostgreSQL, and Redis.
+**Senior Staff Software Engineer** at [SiriusXM/Pandora](https://www.siriusxm.com/)
 
-In the past, I've built distributed systems with Erlang and web applications
-with PHP and Ruby.
+August 2018 to present
 
-Although it hasn't been my primary focus, I've also done a decent amount of
-devops along the way - on bare metal, managed hosting, AWS and GCP - and have
-worked with both Puppet and Chef.
+* During my time at Pandora (and SiriusXM, post-acquisition) I've leaned into developer experience wherever possible.  In addition to my day-to-day work, I've been organizing developer resources and platform support for our annual hackathon for the past 3 years.
+* Technical lead on the buildout of SiriusXM's AWS developer platform, including developer tooling (Python), shared infrastructure and infrastructure-as-code patterns using CDK (TypeScript), CI/CD pipelines (GitHub Actions), data recovery tooling (Glue/PySpark) and software templates (various languages).  Typical services deployed on the platform use a combination of ECS/Fargate, Lambda, DynamoDB and Kinesis, with many other AWS services used for specific use cases.
+* Technical lead on Pandora's "quote-to-cash" advertising software ecosystem, handling $1.5 billion dollars of annual advertising revenue (Java/Spring, Python/Django, TypeScript/Express, PostgreSQL, BigQuery, Redis).
+* Individual contributor building components of Pandora's private cloud offering based on the Hashicorp stack, including work on Nomad deployment patterns, our Consul/Envoy-based service mesh, software templates, Jenkins CI/CD tooling, and Docker base image automation.
 
+**Staff Software Engineer** at [MailChimp](https://mailchimp.com/)
 
-## Professional Experience ##
+May 2012 to July 2018
 
-__Staff Software Engineer__ at
-[MailChimp][mailchimp]
+* While at MailChimp, my efforts focused on productionizing our data scientists’ research, putting the power of analytics and statistical modeling within reach of small businesses.  I also formed and led MailChimp's performance engineering team, and contributed to DevOps efforts.
+* Designed and led development of MailChimp’s data pipeline, streaming billions of row-level changes each day from the binlogs of hundreds of MySQL instances (MySQL, Scala, Kafka).  Also built tooling and client libraries for various languages (Java, PHP, Python).
+* Designing and building MailChimp Pro’s reporting and BI tools, fed from the data pipeline (PHP, Scala, PostgreSQL, Redis).
+* Designing and building MailChimp’s predictive analytics service, which maintains summary statistics on around 4 billion unique email addresses and uses these to feed ML models for compliance and optimization (Python, R, Redis, RabbitMQ).
+* Designing and building MailChimp’s predictive demographics service, as well as a BI tool enabling customers to perform ad hoc analysis on their MailChimp data (Python, BigQuery).
+* Individual contributor on MailChimp’s in-house web framework, including improvements to its ORM, process management, and concurrency APIs (PHP).
 
-May 2012 to present
-
-Throughout my time at MailChimp, my efforts have focused on turning our data
-scientists' research into production services that empower small organizations
-and businesses by putting the power of analytics and statistical modeling within
-their reach. Recently, I've also been serving as the technical lead on our
-newly-formed performance engineering team.
-
-* Designing and leading development of MailChimp's data pipeline, which
-  streams billions of row-level changes each day from the binlogs of our
-  hundreds of MySQL instances. The underlying triptych of Scala applications
-  produces Kafka topics representing each change as a Thrift-serialized struct.
-* Creating and maintaining client libraries and tooling related to MailChimp's
-  data pipeline, variously in Java, PHP and Python.
-* Designing and building MailChimp Pro's reporting and segmentation service
-  using Scala, PHP, PostgreSQL and Redis.
-* Designing and building MailChimp's predictive analytics service using Python,
-  R, Redis and RabbitMQ. The service maintains summary statistics on
-  around 4 billion unique email addresses, which feed models for predicting
-  bounce rates, optimizing campaign send times, and detecting bots.
-* Prototyping MailChimp's predictive demographics service, as well as
-  a BI tool enabling customers to perform ad hoc analysis on their MailChimp
-  data using Python and BigQuery.
-* Contributing to the development of MailChimp's in-house web framework,
-  including improvements to its ORM, process management, and concurrency APIs.
-* Collaborating across a wide array of teams to facilitate access to data
-  for stream and batch processing.
-
-[mailchimp]: https://mailchimp.com
-
-__Staff Engineer__ at
-[Vitrue][vitrue]
+**Staff Software Engineer** at Vitrue (acquired by Oracle)
 
 July 2010 to May 2012
 
-As a lead developer on Vitrue’s Core Services team, I focused heavily on
-modularizing and scaling the core APIs behind Vitrue’s social marketing
-platform.
+* As a lead developer on Vitrue’s Core Services team, I focused heavily on modularizing and scaling the core APIs behind Vitrue’s social marketing platform.
+* Released an open-source an Erlang ISO 8601 date/time library, which is still used by a few projects out there.
+* Led development of Vitrue Publisher’s conversational features for Facebook and Twitter, helping brands engage directly with customers (Ruby/Rails, MongoDB).
+* Designed and built a distributed ingestion service to collect social media conversation and engagement data in near-real-time.  This distributed system replaced a slower, more limited Ruby application, realizing substantial performance and reliability gains (Erlang, PostgreSQL, Redis).
+* Designed and built Vitrue’s self-service location-based marketing offering, integrated with Foursquare and Facebook Places (Ruby/Rails, MongoDB, Twilio).
+* Individual contributor building Vitrue’s DevOps approach to managing our AWS EC2 infrastructure (Chef, Scalr).
+* Designed and built the backends for various Facebook wall and tab applications (Ruby/Rails).
 
-* Developed a social data harvesting/notification service and caching API
-  using Erlang, ZeroMQ, Redis and PostgreSQL. This distributed system replaced
-  a slower, more limited Ruby application, realizing substantial performance
-  and reliability gains.
-* Led development of Vitrue Publisher's conversational features
-  for Facebook and Twitter using Ruby, Rails and MongoDB.
-* Prototyped Vitrue’s location-based marketing offering: a self-service toolkit
-  with Foursquare and Facebook Places integration, also built using Ruby, Rails
-  and MongoDB.
-* Collaborated with other members of the team on devops-focused efforts,
-  building and maintaining Vitrue’s EC2 infrastructure using Chef and Scalr.
-* Mentored junior engineers via frequent pair-programming and code review
-  sessions, as well as organizing reading groups.
+## Odds and Ends
 
-[vitrue]: http://www.oracle.com/us/solutions/social/vitrue/index.html
+In the distant past, I worked as a Ruby developer at [InComm](https://www.incomm.com/) (payments), a Java developer at [Hannon Hill](https://www.hannonhill.com/) (higher ed CMS) and as a sysadmin and PHP developer at a small law firm.
 
+In my free time, I like to play at the intersection of art and programming, making little games (with [SDL](https://www.libsdl.org/)) or doing a bit of audio programming (often with [ChuCK](https://chuck.cs.princeton.edu/)).
 
-__Senior Software Engineer__ at
-Mobilization Labs
-
-May 2008 to July 2010
-
-At Mobilization Labs, I helped drive development of Wildfire Platform, a
-SaaS web application used by primary by non-profits to manage and mobilize
-their supporters for grassroots action. The application was used by a diverse
-crowd of organizations, from the National Urban League, to the Atlanta Mission,
-to even the Jonas Brothers. Wildfire was built using Java, Spring and
-PostgreSQL.
-
-* Led development of the platform’s REST API and implemented a number of client
-  applications powered by the API, including a live SMS survey application
-  written in Scala, and a number of smaller-scale PHP solutions.
-* Created and maintainted a load testing suite (using Tsung) simulating common
-  traffic patterns within the application based on analysis of access logs from
-  periods of heavy production load.
-* Collaborated with other engineers in scaling the platform, including the
-  integration of Terracotta for clustered heap and S3/Cloudfront for asset
-  delivery.
-
-__Senior Software Engineer__ at
-[InComm][incomm]
-
-January 2008 to May 2008
-
-I helped guide the growth of InComm’s web development team by by agitating for
-improved development practices, mentoring other developers, and leading a range
-of improvements across the gaggle of web applications owned by this small team.
-
-* Designed and implemented a half-dozen new web applications (some internal,
-  some user-facing) using Java and Spring, while supervising a team of five
-  engineers. I also designed the UI for several of these applications, for
-  better or for worse!
-* Planned and implemented a number of much-needed improvements to existing
-  production applications on a variety of platforms (Ruby/Rails, Java/Spring,
-  ColdFusion). These included UI overhauls, performance optimization and
-  critical feature additions, as well as migration from Struts to Spring MVC.
-
-[incomm]: http://www.incomm.com/Pages/default.aspx
-
-
-## Odds and Ends ##
-
-During my time at Vitrue, my employer was kind enough to let me open-source
-[an Erlang ISO 8601 library][iso-8601].
-
-Long long ago, I worked as a Java developer at [Hannon Hill][hannon-hill]
-and as a sysadmin and PHP developer at a small law firm.
-
-[hannon-hill]: https://www.hannonhill.com
-[iso-8601]: https://github.com/erlsci/iso8601
