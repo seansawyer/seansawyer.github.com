@@ -254,11 +254,104 @@
 
 	function draw() {
 		var scale = 0.5
+      var tjackLg275plus = new Geometry(
+          'brown',
+          scale,
+          584,  // 27.5 erd
+          2.8 * 25.4,  // tire diameter
+          482.6,  // st
+          641,  // tte
+          425,  // cs
+          1163,  // wb
+          55,  // bbd
+          120,  // ht
+          776,  // so
+          620,  // stack
+          454,  // reach
+          67.6,  // hta
+          73.2  // sta
+      )
+		  var wedMd26plus = new Geometry(
+			    'orange',
+			    scale,
+			    //605, // 29 erd
+			    //565, // 27.5+ erd
+			    559, // 26 erd
+			    3.8 * 25.4, // td
+			    416, // st
+			    610, // tte
+			    435, // cs
+			    1122, // wb
+			    55, // bbd
+			    110, // ht
+			    774, // so
+			    587, // stack
+			    436, // reach
+			    69, // hta
+			    73.5 // sta
+		  )
+		  var wedLg26plus = new Geometry(
+			    'purple',
+			    scale,
+			    //605, // 29 erd
+			    //565, // 27.5+ erd
+			    559, // 26 erd
+			    3.8 * 25.4, // td
+			    466, // st
+			    630, // tte
+			    435, // cs
+			    1143, // wb
+			    55, // bbd
+			    120, // ht
+			    807, // so
+			    597, // stack
+			    453, // reach
+			    69, // hta
+			    73.5 // sta
+		  )
+		var fargoMd29 = new Geometry(
+			'pink',
+			scale,
+			622, // 29 erd
+			//565, // 27.5+ erd
+			2.2 * 25.4, // td
+			//2.8 * 25.4, // td
+			457.2, // st
+			565, // tte
+			450, // cs
+			1088, // wb
+			70, // bbd
+			140, // ht
+			781, // so
+			643, // stack
+			368, // reach
+			69, // hta
+			73 // sta
+		)
+		var fargoLg29 = new Geometry(
+			'black',
+			scale,
+			622, // 29 erd
+			//565, // 27.5+ erd
+			2.2 * 25.4, // td
+			//2.8 * 25.4, // td
+			508, // st
+			590, // tte
+			450, // cs
+			1115, // wb
+			70, // bbd
+			170, // ht
+			823, // so
+			671, // stack
+			385, // reach
+			69, // hta
+			73 // sta
+		)
 		var elMar275 = new Geometry(
 			'red',
 			scale,
 			//605, // 29 erd
-			565, // 27.5+ erd
+			584, // 27.5+ erd
 			//2.4 * 25.4, // td
 			2.8 * 25.4, // td
 			17 * 25.4, // st
@@ -273,22 +366,41 @@
 			71, // hta
 			73 // sta
 		)
-		var elMar29 = new Geometry(
+		  var elMarMd29 = new Geometry(
+			    'red',
+			    scale,
+			    622, // 29 erd
+			    //565, // 27.5+ erd
+			    2.2 * 25.4, // td
+			    //2.8 * 25.4, // td
+			    431.8, // st
+			    600, // tte
+			    438, // cs
+			    1102, // wb
+			    60, // bbd
+			    100, // ht
+			    752.4, // so
+			    600.4, // stack
+			    416.5, // reach
+			    71, // hta
+			    73 // sta
+		  )
+		var elMarLg29 = new Geometry(
 			'green',
 			scale,
-			605, // 29 erd
+			622, // 29 erd
 			//565, // 27.5+ erd
 			2.2 * 25.4, // td
 			//2.8 * 25.4, // td
-			17 * 25.4, // st
-			600, // tte
+			482.6, // st
+			620, // tte
 			438, // cs
-			1102, // wb
+			1105, // wb
 			60, // bbd
-			100, // ht
-			752.4, // so
-			600.4, // stack
-			416.5, // reach
+			110, // ht
+			790.2, // so
+			609.8, // stack
+			433.6, // reach
 			71, // hta
 			73 // sta
 		)
@@ -313,9 +425,15 @@
 			73 // sta
 		)
 		var canvas = new fabric.Canvas('c')
-		elMar275.draw(canvas)
-		elMar29.draw(canvas)
-		analog26.draw(canvas)
+		//elMar275.draw(canvas)
+		  //elMarMd29.draw(canvas)
+		  elMarLg29.draw(canvas)
+		//analog26.draw(canvas)
+		//fargoMd29.draw(canvas)
+		//fargoLg29.draw(canvas)
+    //wedMd26plus.draw(canvas)
+    wedLg26plus.draw(canvas)
+    tjackLg275plus.draw(canvas)
 	}
 })();
 </script>

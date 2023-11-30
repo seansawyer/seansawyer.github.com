@@ -3,8 +3,6 @@ title: Home
 layout: default
 ---
 
-# Sean Sawyer
-
 [GitHub](https://github.com/seansawyer)
 
 ## About Me
