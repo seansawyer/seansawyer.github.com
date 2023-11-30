@@ -24,8 +24,8 @@ AWS Certified Solution Architect Associate (2022)
 August 2018 to present
 
 * During my time at Pandora (and SiriusXM, post-acquisition) I've leaned into developer experience wherever possible.  In addition to my day-to-day work, I've been organizing developer resources and platform support for our annual hackathon for the past 3 years.
-* Technical lead on the buildout of SiriusXM's AWS developer platform, including developer tooling (Python), shared infrastructure and infrastructure-as-code patterns using CDK (TypeScript), CI/CD pipelines (GitHub Actions), data recovery tooling (Glue/PySpark) and software templates (various languages).  Typical services deployed on the platform use a combination of ECS/Fargate, Lambda, DynamoDB and Kinesis, with many other AWS services used for specific use cases.
-* Technical lead on Pandora's "quote-to-cash" advertising software ecosystem, handling $1.5 billion dollars of annual advertising revenue (Java/Spring, Python/Django, TypeScript/Express, PostgreSQL, BigQuery, Redis).
+* Technical lead on the buildout of SiriusXM's AWS developer platform, including developer tooling (Python), shared infrastructure and infrastructure-as-code patterns using CDK (TypeScript), CI/CD pipelines (GitHub Actions), data recovery tooling (Glue/PySpark) and software templates (various languages).  Typical services deployed on the platform use a combination of ECS/Fargate, Lambda, DynamoDB and Kinesis, with many other AWS services used for specific cases.
+* Technical lead on Pandora's [quote-to-cash](https://en.wikipedia.org/wiki/Quote_to_cash) advertising software ecosystem, handling $1.5 billion dollars of annual advertising revenue (Java/Spring, Python/Django, TypeScript/Express, PostgreSQL, BigQuery, Redis).
 * Individual contributor building components of Pandora's private cloud offering based on the Hashicorp stack, including work on Nomad deployment patterns, our Consul/Envoy-based service mesh, software templates, Jenkins CI/CD tooling, and Docker base image automation.
 
 **Staff Software Engineer** at [MailChimp](https://mailchimp.com/)
